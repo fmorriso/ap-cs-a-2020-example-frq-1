@@ -47,8 +47,8 @@ public class OnlinePurchaseManager
         for(int i = 0; i < purchases.size() - 1; i++)
         {
             Gizmo current = purchases.get(i);
-            Gizmo next = purchases.get(i + 1);
-            if(current.equals(next))
+            Gizmo adjacent = purchases.get(i + 1);
+            if(current.equals(adjacent))
                 return true;
         }
         return false;
